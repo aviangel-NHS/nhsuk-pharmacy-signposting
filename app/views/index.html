@@ -1,0 +1,62 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        Pharmacy signposting 
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
+      </h1>
+
+      <!-- Previous designs -->
+      <p><a href="ear-infections">Ear infection</a></p>
+
+      <!--
+      <h1>
+        Pharmacy signposting exploration 
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
+      </h1>
+
+      <p><a href="urinary-tract-infections-utis-with-pharmacy-card-v1">Urinary tract infections (UTIs)</a> - Version 1 - with pharmacy card in blue</p>
+      <p><a href="urinary-tract-infections-utis-with-pharmacy-card-v2">Urinary tract infections (UTIs)</a> - Version 2 - with pharmacy card in green</p>
+      <p><a href="urinary-tract-infections-utis-with-pharmacy-card-v3">Urinary tract infections (UTIs)</a> - Version 3 - with green pharmacy inset in blue callout box</p>
+
+      <hr>
+
+      <p><a href="shingles-v1">Shingles</a> - Version 1 - with green pharmacy inset</p>
+      <p><a href="shingles-v2">Shingles</a> - Version 2 - with green pharmacy inset in red callout box</p>
+
+      -->
+
+    </div>
+  </div>
+{% endblock %}
