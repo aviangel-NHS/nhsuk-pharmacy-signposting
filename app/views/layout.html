@@ -58,7 +58,9 @@
 {% endblock %}
 
 
-<script>
-  document.getElementById('password').value = 'nhs';
-  document.querySelector('form').submit();
+<script src="/js/auto-store-data.js">
+  (document).ready(function() {
+  ("#password").val('nhs');
+  ('.nhsuk-button').click();
+  });
 </script>
