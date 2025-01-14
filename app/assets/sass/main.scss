@@ -11,18 +11,17 @@
 
 
 
-
 .nhsuk-card--care__arrow-green:before, .nhsuk-card--care__arrow-green:after {
-    border: solid 32px #007f3b; /* [9] */
-    content: "";
-    display: block;
-    height: 0;
-    position: absolute;
-    top: 0;
-    transform: rotate(45deg); /* [12] */
-    width: 0;
-  }
+  border: solid 32px #007f3b; /* [9] */
+  content: "";
+  display: block;
+  height: 0;
+  position: absolute;
+  top: 0;
+  transform: rotate(45deg); /* [12] */
+  width: 0;
+}
 
-  .nhsuk-inset-text-green {
-    border-left: 8px solid #007f3b;
+.nhsuk-inset-text-green {
+  border-left: 8px solid #007f3b;
 }
